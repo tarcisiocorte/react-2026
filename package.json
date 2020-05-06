@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^25.9.2",
+    "eslint": "^10.4.1",
     "git-commit-msg-linter": "^5.0.8",
-    "typescript": "^6.0.3"
+    "globals": "^17.6.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
   }
 }
