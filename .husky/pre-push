@@ -1,0 +1,2 @@
+cd react-2026
+npm run test:ci
