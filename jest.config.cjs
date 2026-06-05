@@ -9,6 +9,7 @@ module.exports = {
     '^domain/(.*)$': '<rootDir>/src/domain/$1'
   },
   transform: {
-    '^.+\\.(ts|tsx)$': ['@swc/jest']
-  }
+    '^.+\\.[tj]sx?$': ['@swc/jest']
+  },
+  transformIgnorePatterns: ['/node_modules/(?!@faker-js/faker/)']
 }
