@@ -5,6 +5,7 @@ module.exports = {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
     '^data/(.*)$': '<rootDir>/src/data/$1',
     '^domain/(.*)$': '<rootDir>/src/domain/$1'
   },
