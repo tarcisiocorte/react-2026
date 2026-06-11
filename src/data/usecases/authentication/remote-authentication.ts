@@ -22,7 +22,7 @@ export class RemoteAuthentication implements Authentication {
           return httpResponse.body
         }
         throw new UnexpectedError()
-      case HttpStatusCode.unathorized: throw new InvalidCredentialsError()
+      case HttpStatusCode.unauthorized: throw new InvalidCredentialsError()
       default: throw new UnexpectedError()
     }
   }
