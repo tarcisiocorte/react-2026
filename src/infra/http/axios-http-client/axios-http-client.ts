@@ -1,12 +1,12 @@
-import { HttpStatusCode } from '@/data/protocols/http'
 import type { HttpPostClient, HttpPostParams, HttpResponse } from '@/data/protocols/http'
 import axios from 'axios'
 
 export class AxiosHttpClient<T, R> implements HttpPostClient<T, R> {
   async post (params: HttpPostParams<T>): Promise<HttpResponse<R>> {
-    await axios.post(params.url, params.body)
+    const httpResponse = await axios.post<R>(params.url, params.body)
     return {
-      statusCode: HttpStatusCode.ok
+      statusCode: httpResponse.status,
+      body: httpResponse.data
     }
   }
 }
