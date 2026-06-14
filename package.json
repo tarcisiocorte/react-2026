@@ -1,9 +1,10 @@
 {
   "name": "react-2026",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
+  "author": "Tarcísio Corte",
+  "license": "GNU GPL3",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
     "prepare": "husky",
@@ -15,9 +16,6 @@
     "preview": "vite preview",
     "lint": "eslint src --max-warnings=0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^10.4.0",
     "@swc/core": "^1.15.40",
