@@ -1,3 +1,5 @@
+import react from '@eslint-react/eslint-plugin'
+import reactHooks from 'eslint-plugin-react-hooks'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
@@ -20,7 +22,9 @@ export default tseslint.config(
     },
     extends: [
       ...tseslint.configs.strictTypeChecked,
-      ...tseslint.configs.stylisticTypeChecked
+      ...tseslint.configs.stylisticTypeChecked,
+      react.configs['recommended-type-checked'],
+      reactHooks.configs.flat['recommended-latest']
     ],
     rules: {
       '@typescript-eslint/consistent-type-definitions': 'off',
